@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+This Pod is written in Swift 4. Please ensure your project is compatible with Swift 4.
+
 ## Installation
 
 RKBarcodeScanner is available through [CocoaPods](http://cocoapods.org). To install
