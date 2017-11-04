@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RKBarcodeScanner_Example' do
+  pod 'RKBarcodeScanner', :path => '../'
+
+  target 'RKBarcodeScanner_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
