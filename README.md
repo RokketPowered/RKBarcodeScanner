@@ -22,7 +22,7 @@ pod 'RKBarcodeScanner'
 
 ## Author
 
-cmtrounce, trounce@d-tt.nl
+cmtrounce, ctrounce94@gmail.com
 
 ## License
 
