@@ -48,7 +48,7 @@ And that's it!
 
 ## Author
 
-cmtrounce, ctrounce94@gmail.com
+Callum Trounce, ctrounce94@gmail.com
 
 ## License
 
