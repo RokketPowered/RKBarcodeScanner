@@ -20,6 +20,32 @@ it, simply add the following line to your Podfile:
 pod 'RKBarcodeScanner'
 ```
 
+## Usage
+
+You are not able to initiaise it using code, this is a xib only implementation at the moment.
+
+* Create your view in your storyboard or xib file
+
+* Set the class to **RKBarcodeScanner**
+
+* To begin:
+
+```swift
+barcodeScanner.beginCapture { [unowned self] barcode in
+
+// barcode is of String type. Each new barcode read comes in here if the scanner is active.
+
+}
+```
+
+* When you're done with it:
+
+```swift
+barcodeScanner.stopCapture()
+```
+
+And that's it!
+
 ## Author
 
 cmtrounce, ctrounce94@gmail.com
