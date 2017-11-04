@@ -24,7 +24,7 @@ DESC
 s.homepage         = 'https://github.com/RokketPowered/RKBarcodeScanner.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'RokketPowered' => 'ctrounce94@mail.com' }
+  s.author           = { 'Callum Trounce' => 'ctrounce94@gmail.com' }
   s.source           = { :git => 'https://github.com/RokketPowered/RKBarcodeScanner.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
