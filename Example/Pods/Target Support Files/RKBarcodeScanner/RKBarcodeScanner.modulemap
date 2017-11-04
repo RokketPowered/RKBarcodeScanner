@@ -1,0 +1,6 @@
+framework module RKBarcodeScanner {
+  umbrella header "RKBarcodeScanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

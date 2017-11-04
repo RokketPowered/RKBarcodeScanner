@@ -1,0 +1,16 @@
+PODS:
+  - RKBarcodeScanner (0.1.0)
+
+DEPENDENCIES:
+  - RKBarcodeScanner (from `../`)
+
+EXTERNAL SOURCES:
+  RKBarcodeScanner:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RKBarcodeScanner: 61ea7edc3fd5437f744f2b6b4aafa2e62dc20ef6
+
+PODFILE CHECKSUM: d142dad44414b9f0c47606f1a665e5006407de0e
+
+COCOAPODS: 1.3.1
