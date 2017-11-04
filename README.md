@@ -24,7 +24,7 @@ pod 'RKBarcodeScanner'
 
 You are not able to initiaise it using code, this is a xib only implementation at the moment.
 
-* Create your view in your storyboard or xib file
+* Create a **UIView** in your storyboard or xib file and set up the constraints to take up the space where you want to show the scanner. (i.e. the entire screen)
 
 * Set the class to **RKBarcodeScanner**
 
