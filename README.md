@@ -30,7 +30,14 @@ You are not able to initiaise it using code, this is a xib only implementation a
 
 * Set the class to **RKBarcodeScanner**
 
-* To begin:
+* To start:
+
+```swift
+import RKBarcodeScanner
+```
+
+* then to begin scanning:
+
 
 ```swift
 barcodeScanner.beginCapture { [unowned self] barcode in
