@@ -13,9 +13,9 @@ protocol RKBarcodeScannerDelegate: NSObjectProtocol {
     func failedToSetup(withError error: Error)
 }
 
-class RKBarcodeScanner: UIView {
+public class RKBarcodeScanner: UIView {
     
-    typealias barcodeClosure = (String) -> Void
+    public typealias barcodeClosure = (String) -> Void
     fileprivate var barcodeResultBlock: barcodeClosure?
     
     private var previewLayer: AVCaptureVideoPreviewLayer!
@@ -23,7 +23,8 @@ class RKBarcodeScanner: UIView {
     
     weak var delegate: RKBarcodeScannerDelegate?
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
+        super.awakeFromNib()
         configureView()
         configurePreviewLayer()
         configureCaptureSession()
@@ -84,14 +85,14 @@ class RKBarcodeScanner: UIView {
         print("SETUP OF CAPTURE FAILED")
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         previewLayer.frame = layer.bounds
     }
     
 }
 
-extension RKBarcodeScanner {
+public extension RKBarcodeScanner {
     
     
     /// Begin capturing and waiting for a barcode
@@ -119,7 +120,7 @@ extension RKBarcodeScanner {
 
 extension RKBarcodeScanner: AVCaptureMetadataOutputObjectsDelegate {
     
-    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+    public func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
        
         if let metadataObject = metadataObjects.first {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
